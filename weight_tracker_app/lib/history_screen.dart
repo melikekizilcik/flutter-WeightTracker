@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:weight_tracker_app/widgets/record_list_tile.dart';
 
 class HistoryScreen extends StatefulWidget {
   HistoryScreen({Key? key}) : super(key: key);
@@ -12,8 +13,13 @@ class _HistoryScreenState extends State<HistoryScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(centerTitle: true, title: Text("History")),
-        body: Center(
-          child: Text("History Screen"),
-        ));
+        body: ListView(
+          physics: BouncingScrollPhysics(),
+          children: const [
+          RecordListTile(),
+          RecordListTile(),
+          RecordListTile(),
+          RecordListTile(),
+        ]));
   }
 }

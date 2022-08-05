@@ -1,8 +1,9 @@
 import 'package:animated_bottom_navigation_bar/animated_bottom_navigation_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:weight_tracker_app/graph_screen.dart';
-import 'package:weight_tracker_app/history_screen.dart';
+import 'package:weight_tracker_app/views/graph_screen.dart';
+import 'package:weight_tracker_app/views/history_screen.dart';
+
 
 class Home extends StatefulWidget {
   const Home({Key? key}) : super(key: key);
